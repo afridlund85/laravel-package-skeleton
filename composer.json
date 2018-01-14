@@ -1,0 +1,31 @@
+{
+    "name": "afridlund85/test_package",
+    "description": "nope",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Fridlund",
+            "email": "afridlund85@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Afridlund85\\TestPackage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Afridlund85\\TestPackage\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Afridlund85\\TestPackage\\TestPackageServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
